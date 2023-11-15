@@ -1,0 +1,36 @@
+
+public class Triangle implements Two_D_Shape {
+	
+	int sideA;
+	int sideB;
+	int sideC;
+	int height;
+	
+	Triangle(int sideA,int sideB,int sideC,int height){
+		this.sideA = sideA;
+		this.sideB = sideB;
+		this.sideC = sideC;
+		this.height = height;
+		System.out.println("A new triangle is created");
+	}
+	boolean rectangular() {
+		return ((Math.pow(sideA, 2) + Math.pow(sideB, 2) == Math.pow(sideC, 2)) ? true :  false);
+	}
+	
+	
+	
+	@Override
+	public void parameters() {
+		System.out.println("Side A = " + sideA);
+		System.out.println("Side B = " + sideB);
+		System.out.println("Side C = " + sideC);
+		System.out.println("Height = " + height);
+	}
+	public float area() {
+		return (sideA + sideB + sideC) / 2;
+	}
+	public float perimeter() {
+		return sideA+sideB+sideC;
+	}
+
+}
