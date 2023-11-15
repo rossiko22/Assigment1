@@ -1,0 +1,24 @@
+
+public class Sphere implements Two_D_Shape,Three_D_Shape{
+	
+	float radius;
+	Sphere(float radius){
+		this.radius = radius;
+		System.out.println("A new sphere has been created");
+	}
+
+	public void parameters(){
+		System.out.println("Radius is " + radius);
+	}
+	public float area() {
+		return (float)(4*PI*Math.pow(radius, 2));
+	}
+	public float volume() {
+		return 2 * radius;
+	}
+	public float perimeter(){
+		return 2 * radius;
+	}
+	
+
+}
