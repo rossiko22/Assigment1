@@ -1,0 +1,3 @@
+public interface Three_D_Shape {
+	float volume();
+}
