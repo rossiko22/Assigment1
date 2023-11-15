@@ -1,0 +1,9 @@
+
+public interface Two_D_Shape {
+	double PI = 3.14;
+	
+	void parameters();
+	float area();
+	float perimeter();
+	
+}
